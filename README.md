@@ -9,6 +9,14 @@ This program makes use of "Streaming" within Hadoop. What this does is map the S
 This allows me to use a python file in order to M/R, rather than traditionally Java.
 
 Some commands to remember: 
+cd usr/local/Cellar/Hadoop (brew installation)
+First SSH into localhost (by default http://localhost:50070/)
+
+Starting Node for file system:
+  $ sbin/start-dfs.sh
+Stopping Node for file system:
+    $ sbin/stop-dfs.sh
+
 
 Running jar file with input guten, output dir guten-output2, mapper.py, and reducer.py utilizing STREAM "api"
 bin/hadoop jar libexec/share/hadoop/tools/sources/hadoop-streaming-2.7.2.jar \
